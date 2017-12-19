@@ -1,0 +1,1 @@
+"use strict";$(".travelIcons").delegate("li","click",function(){var o=$(this).index();0==o&&$("#istanbulCaption").html("Jump across the Black Sea to Turkey"),1==o&&(console.log(o),$("#tajCaption").html("The Taj at dawn")),2==o&&(console.log(o),$("#kievCaption").html("The Golden domes of Kiev")),3==o&&(console.log(o),$("#umanCaption").html("Sofiyivski Park in Autumn"))});

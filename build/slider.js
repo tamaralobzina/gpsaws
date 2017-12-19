@@ -1,0 +1,1 @@
+"use strict";$(function(){function n(){e=setInterval(function(){f.animate({"margin-left":"-="+t},i,function(){++l==o.length&&(l=1,f.css("margin-left",0))})},s)}var e,t=1035,i=2e3,s=3e3,l=1,a=$("#slider"),f=a.find(".slides"),o=f.find(".slide");a.on("mouseenter",function(){clearInterval(e)}).on("mouseleave",n),n()});

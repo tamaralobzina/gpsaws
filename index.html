@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Lesson 22 </title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+</head>
+
+<body>
+
+<header class="header">
+    <div class="wrapper">
+        <header class="headerInHeader">
+            <a href="#" class="logo">T</a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#"data-toggle="modal" data-target="#myModal">Sign Up</a>
+                    </li>
+                        <a href="#">About Us</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+
+                            <form name='registration'>
+
+                                <input type="text" name="username" placeholder="username" id="username"/>
+                                <span id="usernameError"></span>
+
+                                <input type="text" name="email" placeholder="email" id="email"/>
+                                <span id="emailError"></span>
+
+                                <input type="text" name="password" placeholder="password" id="password"/>
+                                <span id="passwordError"></span>
+
+                                <input type="text" name="confirmPassword" placeholder=" confirm password" id="confirmPassword"/>
+                                <span id="confirmPasswordError"></span>
+
+                                <input type="button" value="Submit" id="submitBtn"/>
+
+                            </form>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<main>
+
+    <section class="hot">
+    <div class="wrapper">
+
+        <header>
+            <h2 class="text-muted">Explore Your Next Destination</h2>
+            <a href="#" class="allSee">See all</a>
+        </header>
+
+        </div>
+
+        <div id="slider">
+            <ul class="slides">
+                <li class="slide"><img src="images/sweets1035.png"/></li>
+                <li class="slide"><img src="images/taj1035.jpg"/></li>
+                <li class="slide"><img src="images/kiev.jpg"/></li>
+                <li class="slide"><img src="images/boat.JPG"/></li>
+
+            </ul>
+        </div>
+    </section>
+
+    <section class="hot">
+        <div class="wrapper">
+            <header>
+                <h2 class="text-muted">Destinations We Visited</h2>
+                <a href="#" class="allSee">See all</a>
+            </header>
+
+            <ul class="travelIcons">
+                <li>
+                    <a href="#">
+                        <img src="images/istanbul.png">
+                        <h3>Istanbul</h3>
+                        <span id="istanbulCaption"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="images/taj.png">
+                        <h3>Taj Mahal</h3>
+                        <span id="tajCaption"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/kiev.png">
+                        <h3>Kiev</h3>
+                        <span id="kievCaption"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/uman.png">
+                        <h3>Uman</h3>
+                        <span id="umanCaption"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </section>
+</main>
+
+<footer class="footer">
+
+    <div class="wrapper">
+
+        <div class="select">
+
+            <select name="lang">
+                <option value="english">English</option>
+            </select>
+
+            <form name="changeMe">
+
+                <select name="currency" id="currency"></select>
+
+                <input type="button" id="changeMeBtn" value="Change Me">
+            </form>
+
+
+        </div>
+    </div>
+
+</footer>
+
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="dist.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
